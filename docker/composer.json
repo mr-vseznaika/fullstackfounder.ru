@@ -1,0 +1,50 @@
+{
+    "name": "sterner-stuff/wordpress-sail",
+    "description": "Docker files for running a basic WordPress application. Derived from Laravel Sail",
+    "keywords": [
+        "wordpress",
+        "docker"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/sterner-stuff/wordpress-sail/issues",
+        "source": "https://github.com/sterner-stuff/wordpress-sail"
+    },
+    "authors": [
+        {
+            "name": "Ethan Clevenger",
+            "email": "ethan@sternerstuff.dev"
+        },
+        {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/contracts": "^8.0|^9.0",
+        "illuminate/support": "^8.0|^9.0",
+        "wp-cli/wp-cli": "^2.6"
+    },
+    "bin": [
+        "bin/sail"
+    ],
+    "autoload": {
+        "psr-4": {
+            "SternerStuff\\WordPressSail\\": "src/"
+        },
+        "files": [
+            "command.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

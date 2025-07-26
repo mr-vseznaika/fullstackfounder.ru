@@ -1,0 +1,31 @@
+stages:          # List of stages for jobs, and their order of execution
+  - build
+  - deploy
+
+build-job:       # This job runs in the build stage, which runs first.
+  stage: build
+  tags:
+    - wordpress
+  script:
+    - echo "Compiling the code..."
+    - echo "Compile complete."
+  only:
+    - master
+
+deploy-job:      # This job runs in the deploy stage.
+  stage: deploy
+  tags:
+    - wordpress
+  script:
+    - echo "Deploying application..."
+    - cd /var/www/osnova-wp
+    - git reset --hard
+    - git pull
+    - composer install
+    - cd /var/www/osnova-wp/web/app/themes/osnovaDetstva/
+    - composer install
+    - yarn install
+    - yarn build
+    - echo "Application successfully deployed."
+  only:
+    - master

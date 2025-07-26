@@ -1,0 +1,5 @@
+path: web/wp
+server:
+  docroot: web
+require:
+    - vendor/autoload.php
