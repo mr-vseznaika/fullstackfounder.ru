@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9db5ffe50b0e0423ffc9cdee232f5bc",
+    "content-hash": "c5ebdf035ca5585dabe4e6aa3e2d12ab",
     "packages": [
         {
             "name": "brick/math",
@@ -5466,6 +5466,24 @@
             "homepage": "https://wordpress.org/plugins/meta-box/"
         },
         {
+            "name": "wpackagist-plugin/slim-seo",
+            "version": "4.6.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/slim-seo/",
+                "reference": "tags/4.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/slim-seo.4.6.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/slim-seo/"
+        },
+        {
             "name": "wpackagist-plugin/updraftplus",
             "version": "1.25.6",
             "source": {
@@ -5500,24 +5518,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/w3-total-cache/"
-        },
-        {
-            "name": "wpackagist-plugin/wordpress-seo",
-            "version": "25.5",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/25.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.25.5.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
             "name": "wpackagist-plugin/wp-mail-smtp",
